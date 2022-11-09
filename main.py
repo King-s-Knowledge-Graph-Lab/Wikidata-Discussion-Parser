@@ -5,7 +5,7 @@ def main():
     wiki_downloader = Downloader(url=url)
     wiki_downloader.get_links("meta")
     print(wiki_downloader.links)
-    wiki_downloader.reset_downloader()
+    wiki_downloader.download_file(link=wiki_downloader.links[0],filename="test")
     print(wiki_downloader.links)
 
 
